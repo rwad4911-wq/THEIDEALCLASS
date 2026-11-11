@@ -1,0 +1,122 @@
+{
+  "teachers": [
+    {
+      "id": "t-admin-rwad",
+      "name": "Rwad Evaluator",
+      "nameAr": "رواد المقيّم",
+      "email": "rwad4911@gmail.com",
+      "role": "admin",
+      "subject": "School Principal & Lead Evaluator",
+      "subjectAr": "مدير المدرسة والمقيّم العام",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
+    }
+  ],
+  "settings": {
+    "resetDayOfWeek": 0,
+    "currentWeekId": "2026-W44",
+    "weekStartDate": "2026-10-25",
+    "schoolName": "Al-Andalus School",
+    "schoolNameAr": "مدارس الأندلس"
+  },
+  "ratings": [
+    {
+      "id": "r-1793186666799-rhux1",
+      "weekId": "2026-W44",
+      "classId": "4/A",
+      "teacherId": "t-admin-rwad",
+      "teacherName": "Rwad Evaluator",
+      "teacherNameAr": "رواد المقيّم",
+      "teacherSubject": "School Principal & Lead Evaluator",
+      "score": 10,
+      "comment": "Upgraded to 10!",
+      "createdAt": "2026-10-28T11:24:26.799Z",
+      "updatedAt": "2026-10-28T11:24:30.186Z"
+    },
+    {
+      "id": "r-1794220721109-9yv5o",
+      "weekId": "2026-W44",
+      "classId": "5/A",
+      "teacherId": "t-admin-rwad",
+      "teacherName": "Rwad Evaluator",
+      "teacherNameAr": "رواد المقيّم",
+      "teacherSubject": "School Principal & Lead Evaluator",
+      "score": 10,
+      "comment": "Superb presentation and lab cleanliness",
+      "createdAt": "2026-11-09T10:38:41.109Z",
+      "updatedAt": "2026-11-09T10:38:41.109Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "hist-w43",
+      "weekId": "2026-W43",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-24",
+      "winningClasses": [
+        "6/A"
+      ],
+      "winningScore": 9.3,
+      "totalRatings": 12,
+      "classesSummary": {
+        "7/A": {
+          "averageScore": 8.5,
+          "ratingsCount": 3
+        },
+        "6/A": {
+          "averageScore": 9.3,
+          "ratingsCount": 4
+        },
+        "5/A": {
+          "averageScore": 7.8,
+          "ratingsCount": 2
+        },
+        "4/A": {
+          "averageScore": 8,
+          "ratingsCount": 2
+        },
+        "3/A": {
+          "averageScore": 7.5,
+          "ratingsCount": 1
+        }
+      },
+      "finalizedAt": "2026-10-25T00:00:00.000Z",
+      "resetBy": "Sarah Al-Mansoor"
+    },
+    {
+      "id": "hist-w42",
+      "weekId": "2026-W42",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-17",
+      "winningClasses": [
+        "5/A",
+        "4/A"
+      ],
+      "winningScore": 9,
+      "totalRatings": 10,
+      "classesSummary": {
+        "7/A": {
+          "averageScore": 8.1,
+          "ratingsCount": 2
+        },
+        "6/A": {
+          "averageScore": 8.4,
+          "ratingsCount": 3
+        },
+        "5/A": {
+          "averageScore": 9,
+          "ratingsCount": 2
+        },
+        "4/A": {
+          "averageScore": 9,
+          "ratingsCount": 2
+        },
+        "3/A": {
+          "averageScore": 6.8,
+          "ratingsCount": 1
+        }
+      },
+      "finalizedAt": "2026-10-18T00:00:00.000Z",
+      "resetBy": "Rwad Evaluator"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --andalus-blue-deep: #07162c;
+    --andalus-blue-mid: #0c2344;
+    --andalus-blue-surface: #102e58;
+    --andalus-blue-panel: #163c70;
+    --andalus-white: #ffffff;
+    --andalus-white-soft: #f0f6fc;
+    --andalus-gold: #e5b945;
+    --andalus-gold-bright: #fef08a;
+    --andalus-cobalt: #1d4ed8;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #07172e;
+    /* Clean, elegant Blue & White background with NO shapes or busy patterns */
+    background: linear-gradient(180deg, #07172e 0%, #0c2344 50%, #07172e 100%);
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  [dir="rtl"] {
+    font-family: 'Cairo', 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: normal !important;
+  }
+
+  [dir="rtl"] * {
+    letter-spacing: normal !important;
+  }
+}
+
+/* Modern Saudi Educational Typography: Cairo for Arabic & Plus Jakarta Sans for Latin */
+h1, h2, h3, h4, h5, h6, button, input, label, select, textarea, .font-serif, .font-sans {
+  font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Clean Blue & White Trim Accent Divider (بدون أشكال أو زخارف مربكة) */
+.andalus-frieze {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.35) 50%, transparent 100%);
+  height: 2px;
+}
+
+/* Andalusian Horseshoe Arch Header shape */
+.andalus-arch {
+  clip-path: polygon(
+    0% 0%, 
+    100% 0%, 
+    100% calc(100% - 16px), 
+    95% 100%, 
+    5% 100%, 
+    0% calc(100% - 16px)
+  );
+}
+
+/* Blue & White Andalusian Glazed Card styling */
+.andalus-card {
+  background: linear-gradient(145deg, rgba(14, 38, 72, 0.90) 0%, rgba(8, 22, 44, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 
+    0 10px 30px -5px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.25) inset;
+}
+
+.andalus-card-champion {
+  background: linear-gradient(145deg, rgba(22, 54, 98, 0.95) 0%, rgba(10, 26, 52, 0.98) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 
+    0 15px 40px -5px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(59, 130, 246, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.3) inset;
+}
+
+/* Ornate Blue & White Trim */
+.andalus-gold-border {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.andalus-gold-text {
+  color: #fef08a;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Custom styled Blue & White rating range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #1e3a8a 0%, #2563eb 35%, #38bdf8 70%, #ffffff 100%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  outline: none;
+  cursor: pointer;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 45%, #e2e8f0 80%, #94a3b8 100%);
+  border: 3px solid #1e40af;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7), 0 0 12px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.85), 0 0 18px rgba(255, 255, 255, 1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 45%, #e2e8f0 80%, #94a3b8 100%);
+  border: 3px solid #1e40af;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.18);
+}
+
+/* Animations */
+@keyframes bounceSubtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 3s ease-in-out infinite;
+}

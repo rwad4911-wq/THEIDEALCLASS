@@ -1,0 +1,6 @@
+{
+  "name": "Al-Andalus School - Class Champion",
+  "description": "Weekly teacher rating system and leaderboard for Al-Andalus School classes 7/A, 6/A, 5/A, 4/A, and 3/A with bilingual English and Arabic support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
